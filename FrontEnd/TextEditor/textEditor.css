@@ -1,0 +1,57 @@
+body {
+    color: silver;
+    background-color: #171711;
+}
+/* Custom css for the textEditor input */
+.textBox {
+    display: flex;
+    border: 2px solid silver;
+    border-radius: 2vw;
+    flex-direction: column;
+    padding: 1vw;
+    justify-content: center;
+}
+.stylingBar {
+    display: flex;
+    min-height: 2vw;
+    min-width: 75vw;
+    align-content: center;
+    justify-content: center;
+}
+.stylingBar input {
+    min-width: 6vw;
+    margin-left: 0.5vw;
+}
+/* TODO make this only one line, and limit the amount of characters */
+#textEditorTitle {
+    background-color: #171711;
+    color: silver;
+    min-height: 1rem;
+    max-height: 2.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.5vw;
+}
+/* .textEditorBlock {
+} */
+#lineCounter {
+    text-align: right;
+    margin: 0;
+    color: silver;
+    box-sizing: border-box;
+    font-size: 1.25rem;
+    outline: none;
+    background-color: #202020;
+    min-height: 75vh;
+    max-height: 75vh;
+    max-width: 5vw;
+    margin: 0;
+    justify-content: end;
+}
+#textEditor {
+    background-color: #171711;
+    min-width: 70vw;
+    font-size: 1.25rem;
+    color: silver;
+    max-height: 75vh;
+    min-height: 75vh;
+}

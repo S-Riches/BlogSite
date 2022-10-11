@@ -1,10 +1,10 @@
+// TODO tidy this up as there is no need for array and string conversion, could just do one function that does both things at the same time
 // reads the value of the text editor, splits at new line and then gets the length
 function getNumberOfLines() {
     let textBox = document.getElementById("textEditor");
     let numberOfLines = textBox.value.split("\n").length;
     return numberOfLines;
 }
-// TODO tidy this up as there is no need for array and string conversion, could just do one function that does both things at the same time
 // create an array of lines from 1 to number of lines
 function convertToArray(numberOfLines) {
     let listOfLines = [];

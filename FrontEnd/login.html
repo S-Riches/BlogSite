@@ -5,6 +5,32 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <link rel="stylesheet" href="loginStyle.css" />
     </head>
-    <body></body>
+    <body>
+        <div class="container">
+            <!-- This is a html template, that i will probably make appear on the
+            website when you click the login button, similar to a pop up -->
+            <div class="loginBox">
+                <h1>Login To The Blog</h1>
+                <label for="userName">User name</label>
+                <input
+                    id="userName"
+                    name="userName"
+                    type="text"
+                    placeholder="E.g. johnSmith"
+                />
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="E.g. yourStr0ngPassWord"
+                />
+                <a href="/">Forgot your password?</a>
+                <a href="/">Dont have an account?</a>
+                <input type="button" value="Sign in" />
+            </div>
+        </div>
+    </body>
 </html>

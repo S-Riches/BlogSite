@@ -34,6 +34,7 @@ body {
 /* .textEditorBlock {
 } */
 #lineCounter {
+    resize: none;
     text-align: right;
     margin: 0;
     color: silver;
@@ -43,11 +44,12 @@ body {
     background-color: #202020;
     min-height: 75vh;
     max-height: 75vh;
-    max-width: 5vw;
+    max-width: 3vw;
     margin: 0;
     justify-content: end;
 }
 #textEditor {
+    resize: none;
     background-color: #171711;
     min-width: 70vw;
     font-size: 1.25rem;

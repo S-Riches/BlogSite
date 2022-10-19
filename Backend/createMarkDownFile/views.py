@@ -17,7 +17,7 @@ def createFile(request):
         # convert the string to a json object.
         bodyData = json.loads(bodyData)
         # now insert it into the database, after doing some formatting to make it match up with the model
-        newFile = markdownFile(title=bodyData["Title"], dataContent=bodyData["Content"])
-        newFile.save()
-        # print(data["Title"])
+        # ONLY COMMENT OUT THE BELOW TWO LINES WHEN ACTUALLY WANTING TO SAVE DATA
+        # newFile = markdownFile(title=bodyData["Title"], dataContent=bodyData["Content"])
+        # newFile.save()
         return JsonResponse(bodyData)

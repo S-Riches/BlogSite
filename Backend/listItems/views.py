@@ -4,5 +4,5 @@ from listItems.models import markdownFile
 
 # Create your views here.
 def listOfFiles(request):
-    files = markdownFile.objects.all()
+    files = markdownFile.objects.all().values()
     return HttpResponse(files)

@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('listFiles/', include('listItems.urls')),
     path('createFile/', include('createMarkDownFile.urls')),
+    path('deleteFile/', include('deleteFile.urls')),
 ]

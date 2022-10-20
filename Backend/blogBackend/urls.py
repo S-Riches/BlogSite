@@ -21,4 +21,6 @@ urlpatterns = [
     path('listFiles/', include('listItems.urls')),
     path('createFile/', include('createMarkDownFile.urls')),
     path('deleteFile/', include('deleteFile.urls')),
+    path('readFile/', include('readFile.urls')),
+    path('updateFile/',include('updateFile.urls'))
 ]

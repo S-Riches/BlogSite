@@ -1,6 +1,4 @@
-from turtle import title
-from django.shortcuts import render
-from django.http import JsonResponse, HttpRequest, multipartparser
+from django.http import JsonResponse
 from listItems.models import markdownFile
 from django.views.decorators.csrf import csrf_exempt
 import json
@@ -18,6 +16,6 @@ def createFile(request):
         bodyData = json.loads(bodyData)
         # now insert it into the database, after doing some formatting to make it match up with the model
         # ONLY COMMENT OUT THE BELOW TWO LINES WHEN ACTUALLY WANTING TO SAVE DATA
-        # newFile = markdownFile(title=bodyData["Title"], dataContent=bodyData["Content"])
-        # newFile.save()
+        newFile = markdownFile(title=bodyData["Title"], dataContent=bodyData["Content"])
+        newFile.save()
         return JsonResponse(bodyData)

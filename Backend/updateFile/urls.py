@@ -1,7 +1,6 @@
 from django.urls import path
-
 from . import views
 
 urlpatterns = [
-    path('file/', views.deleteFile)
+    path('File/', views.updateFile)
 ]

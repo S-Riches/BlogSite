@@ -1,13 +1,43 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap");
+
+* {
+    font-family: "Fira Sans", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar h1 {
+    margin: 2vw;
+}
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    align-items: center;
+}
+.links a {
+    background-color: red;
+    border-radius: 0.5vw;
+    text-decoration: none;
+    color: black;
+    padding: 0.5vw;
+}
+.cardHolder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cardBox {
+    width: 90vw;
+    height: auto;
+    font-size: 3rem;
+    border: 5px solid black;
+    border-radius: 2vw;
+}
+.cardBox h3 {
+    text-align: start;
 }

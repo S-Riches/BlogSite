@@ -31,13 +31,23 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.card {
+    max-width: 50vw;
+}
 .cardBox {
-    width: 90vw;
     height: auto;
     font-size: 3rem;
     border: 5px solid black;
     border-radius: 2vw;
 }
 .cardBox h3 {
-    text-align: start;
+    text-align: center;
+}
+
+.textBlock {
+    /* font-size: 2rem;
+    margin-left: 5vw;
+    margin-right: 5vw; */
+    /* display: none; */
 }

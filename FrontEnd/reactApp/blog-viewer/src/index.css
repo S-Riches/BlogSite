@@ -25,26 +25,41 @@
     color: black;
     padding: 0.5vw;
 }
-.cardHolder {
+.cardHolderTop {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
 }
 
-.card {
-    max-width: 50vw;
-}
-.cardBox {
-    height: auto;
+.cardHolderTop .cardBox {
+    display: inline-block;
+    width: fit-content;
     font-size: 3rem;
     border: 5px solid black;
     border-radius: 2vw;
+    align-self: center;
+    margin: 1vw;
 }
-.cardBox h3 {
+.cardHolderTop h3 {
     text-align: center;
+    padding-left: 8vw;
+    padding-right: 8vw;
 }
 
+.allBlogs .cardList {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+/* gonna need to restrict the amount of text for each article to be displayed, to make people click to render the page. */
+.allBlogs .card {
+    display: flex;
+    flex-direction: column;
+    max-width: 20vw;
+}
 .textBlock {
     /* font-size: 2rem;
     margin-left: 5vw;

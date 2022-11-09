@@ -10,8 +10,13 @@ const Card = (props) => {
         setIsShown((val) => !val);
     };
     return (
-        <div className="card" onClick={growCard}>
-            <div className="cardBox">
+        <div className="card">
+            {/* need to find a way to make this smooth */}
+            <div
+                className="cardBox"
+                onMouseEnter={growCard}
+                onMouseLeave={growCard}
+            >
                 <h3>{article.title}</h3>
                 {/* this only renders if the condition within is met */}
                 {isShown && (

@@ -4,8 +4,20 @@ import Navbar from "./Navbar";
 import CardList from "./CardList";
 
 function App() {
-    // test data for the props
+    // test data for the top two blogs.
     const blogs = [
+        {
+            title: "Hello",
+            content:
+                "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates accusantium nihil corporis harum distinctio culpa dolores vel ipsa, quaerat, esse amet quis possimus beatae similique. Eos adipisci nemo praesentium asperiores magnam labore iure a beatae necessitatibus consequatur. Molestias, quisquam velit ducimus quis exercitationem ex perferendis doloremque quasi aut quo quaerat!",
+        },
+        {
+            title: "Henlo",
+            content:
+                "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates accusantium nihil corporis harum distinctio culpa dolores vel ipsa, quaerat, esse amet quis possimus beatae similique. Eos adipisci nemo praesentium asperiores magnam labore iure a beatae necessitatibus consequatur. Molestias, quisquam velit ducimus quis exercitationem ex perferendis doloremque quasi aut quo quaerat!",
+        },
+    ];
+    const blogList = [
         {
             title: "Hello",
             content:
@@ -32,21 +44,29 @@ function App() {
                 "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates accusantium nihil corporis harum distinctio culpa dolores vel ipsa, quaerat, esse amet quis possimus beatae similique. Eos adipisci nemo praesentium asperiores magnam labore iure a beatae necessitatibus consequatur. Molestias, quisquam velit ducimus quis exercitationem ex perferendis doloremque quasi aut quo quaerat!",
         },
         {
-            title: "Hell2",
+            title: "Hello",
+            content:
+                "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates accusantium nihil corporis harum distinctio culpa dolores vel ipsa, quaerat, esse amet quis possimus beatae similique. Eos adipisci nemo praesentium asperiores magnam labore iure a beatae necessitatibus consequatur. Molestias, quisquam velit ducimus quis exercitationem ex perferendis doloremque quasi aut quo quaerat!",
+        },
+        {
+            title: "Hello",
             content:
                 "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates accusantium nihil corporis harum distinctio culpa dolores vel ipsa, quaerat, esse amet quis possimus beatae similique. Eos adipisci nemo praesentium asperiores magnam labore iure a beatae necessitatibus consequatur. Molestias, quisquam velit ducimus quis exercitationem ex perferendis doloremque quasi aut quo quaerat!",
         },
     ];
-    // useEffect(() => {
-    //     fetch("url");
-    // });
+
     return (
         <div className="App">
             <Navbar />
-            <div className="cardHolder">
+            <h1>Newest Blogs</h1>
+            <div className="cardHolderTop">
                 {/* Newest blog placeholder */}
                 {/* second newest blog placeholder */}
                 <CardList blogs={blogs} />
+            </div>
+            <h2>All Blogs</h2>
+            <div className="allBlogs">
+                <CardList blogs={blogList} />
             </div>
         </div>
     );

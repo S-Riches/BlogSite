@@ -1,7 +1,7 @@
 import "./App.css";
 import Navbar from "./Navbar";
-// import Card from "./Card";
 import CardList from "./CardList";
+import Page from "./Page";
 
 function App() {
     // test data for the top two blogs.
@@ -10,6 +10,10 @@ function App() {
             title: "Hello",
             content:
                 "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates accusantium nihil corporis harum distinctio culpa dolores vel ipsa, quaerat, esse amet quis possimus beatae similique. Eos adipisci nemo praesentium asperiores magnam labore iure a beatae necessitatibus consequatur. Molestias, quisquam velit ducimus quis exercitationem ex perferendis doloremque quasi aut quo quaerat!",
+        },
+        {
+            title: "Hello",
+            content: "Lorem ipsum dolor sit amet",
         },
         {
             title: "Henlo",
@@ -59,15 +63,16 @@ function App() {
         <div className="App">
             <Navbar />
             <h1>Newest Blogs</h1>
+            {/* shows two big blogs boxes */}
             <div className="cardHolderTop">
-                {/* Newest blog placeholder */}
-                {/* second newest blog placeholder */}
                 <CardList blogs={blogs} />
             </div>
             <h2>All Blogs</h2>
+            {/* shows all blogs, or atleast a lot of them in a list. */}
             <div className="allBlogs">
                 <CardList blogs={blogList} />
             </div>
+            <Page />
         </div>
     );
 }

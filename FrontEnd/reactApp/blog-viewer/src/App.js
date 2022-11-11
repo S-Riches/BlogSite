@@ -58,6 +58,9 @@ function App() {
                 "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates accusantium nihil corporis harum distinctio culpa dolores vel ipsa, quaerat, esse amet quis possimus beatae similique. Eos adipisci nemo praesentium asperiores magnam labore iure a beatae necessitatibus consequatur. Molestias, quisquam velit ducimus quis exercitationem ex perferendis doloremque quasi aut quo quaerat!",
         },
     ];
+    const title = "Hello";
+    const content =
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, vel!";
 
     return (
         <div className="App">
@@ -72,7 +75,7 @@ function App() {
             <div className="allBlogs">
                 <CardList blogs={blogList} />
             </div>
-            <Page />
+            <Page title={title} content={content} />
         </div>
     );
 }
